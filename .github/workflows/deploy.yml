@@ -42,6 +42,7 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd ~/ci-cd-practice
+            chmod +x deploy.sh
             ./deploy.sh
 
 
