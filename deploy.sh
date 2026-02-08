@@ -16,8 +16,9 @@ node -v
 # Go to project directory
 cd ~/ci-cd-practice
 
-# Pull latest code
-git pull origin main
+# Pull latest code and merge both states in ec2 and github
+git fetch origin main
+git reset --hard origin/main
 
 # Install dependencies and build
 npm install
